@@ -18,12 +18,11 @@
       display: flex;
       flex-direction: column;
       align-items: center;
-      padding: 60px 20px;
-      text-align: center;
+      padding-top: 80px;
     }
 
     h1 {
-      font-size: 3.2em;
+      font-size: 3em;
       margin-bottom: 30px;
     }
 
@@ -32,23 +31,29 @@
       flex-direction: row;
       align-items: center;
       justify-content: center;
-      flex-wrap: wrap;
-      gap: 40px;
-      max-width: 1000px;
+      gap: 50px;
+      max-width: 800px;
       padding: 20px;
     }
 
     .logo-section img {
-      width: 220px;
+      width: 150px;
       height: auto;
       animation: float 3s ease-in-out infinite;
     }
 
     .description {
-      font-size: 1.2em;
-      max-width: 450px;
-      line-height: 1.6;
+      font-size: 1.1em;
+      max-width: 400px;
       animation: floatReverse 3s ease-in-out infinite;
+    }
+
+    .footer {
+      text-align: center;
+      font-size: 0.9em;
+      margin-top: 100px;
+      padding-bottom: 30px;
+      color: #aaa;
     }
 
     @keyframes float {
@@ -62,24 +67,6 @@
       50% { transform: translateY(10px); }
       100% { transform: translateY(0px); }
     }
-
-    @media (max-width: 768px) {
-      h1 {
-        font-size: 2.2em;
-      }
-
-      .logo-section {
-        flex-direction: column;
-      }
-
-      .logo-section img {
-        width: 180px;
-      }
-
-      .description {
-        font-size: 1em;
-      }
-    }
   </style>
 </head>
 <body>
@@ -88,10 +75,12 @@
     <div class="logo-section">
       <img src="kravos-logo.png" alt="Karvos Logo" />
       <div class="description">
-        <p>Discover our universe of games, built with emotion, depth, and purpose.<br>Welcome to the home of unforgettable adventures.</p>
+        <p>Karvos is more than a studio. It’s a vision, a rebellion against the ordinary. Every line of code, every frame of art, every second of gameplay—it’s all forged with purpose. We don’t follow trends. We craft legends.</p>
       </div>
+    </div>
+    <div class="footer">
+      © 2025 Karvos. All rights reserved.
     </div>
   </div>
 </body>
-  </html></body>
 </html>
