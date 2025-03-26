@@ -11,18 +11,18 @@
       background: black;
       color: white;
       font-family: 'Segoe UI', sans-serif;
-      overflow-x: hidden;
       display: flex;
       flex-direction: column;
       min-height: 100vh;
+      justify-content: space-between;
     }
 
     .container {
       display: flex;
       flex-direction: column;
       align-items: center;
+      justify-content: center;
       padding-top: 80px;
-      flex: 1;
     }
 
     h1 {
@@ -35,7 +35,6 @@
       flex-direction: column;
       align-items: center;
       gap: 20px;
-      padding: 20px;
       animation: float 3s ease-in-out infinite;
     }
 
@@ -51,6 +50,20 @@
       animation: floatReverse 3s ease-in-out infinite;
     }
 
+    .tagline {
+      text-align: center;
+      margin-top: 60px;
+      font-size: 1em;
+      color: #aaa;
+    }
+
+    footer {
+      text-align: center;
+      padding: 20px;
+      font-size: 0.9em;
+      color: #666;
+    }
+
     @keyframes float {
       0% { transform: translateY(0px); }
       50% { transform: translateY(-10px); }
@@ -62,25 +75,18 @@
       50% { transform: translateY(10px); }
       100% { transform: translateY(0px); }
     }
-
-    footer {
-      text-align: center;
-      padding: 20px;
-      font-size: 0.9em;
-      color: #888;
-    }
   </style>
 </head>
 <body>
   <div class="container">
     <h1>Karvos</h1>
     <div class="logo-section">
-      <img src="logo.png" alt="Karvos Logo" />
+      <img src="karvos-logo.png" alt="Karvos Logo" />
       <div class="description">
-        <p>Discover our universe of games, built with emotion, depth, and purpose.  
-        Welcome to the home of unforgettable adventures.</p>
+        <p>Discover our universe of games, built with emotion, depth, and purpose.<br>Welcome to the home of unforgettable adventures.</p>
       </div>
     </div>
+    <div class="tagline">Crafted for dreamers. Fueled by passion. Remember the name — Karvos.</div>
   </div>
 
   <footer>
