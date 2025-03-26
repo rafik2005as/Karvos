@@ -12,6 +12,9 @@
       color: white;
       font-family: 'Segoe UI', sans-serif;
       overflow-x: hidden;
+      display: flex;
+      flex-direction: column;
+      min-height: 100vh;
     }
 
     .container {
@@ -19,6 +22,7 @@
       flex-direction: column;
       align-items: center;
       padding-top: 80px;
+      flex: 1;
     }
 
     h1 {
@@ -28,32 +32,23 @@
 
     .logo-section {
       display: flex;
-      flex-direction: row;
+      flex-direction: column;
       align-items: center;
-      justify-content: center;
-      gap: 50px;
-      max-width: 800px;
+      gap: 20px;
       padding: 20px;
-    }
-
-    .logo-section img {
-      width: 150px;
-      height: auto;
       animation: float 3s ease-in-out infinite;
     }
 
-    .description {
-      font-size: 1.1em;
-      max-width: 400px;
-      animation: floatReverse 3s ease-in-out infinite;
+    .logo-section img {
+      width: 200px;
+      height: auto;
     }
 
-    .footer {
+    .description {
+      font-size: 1.2em;
       text-align: center;
-      font-size: 0.9em;
-      margin-top: 100px;
-      padding-bottom: 30px;
-      color: #aaa;
+      max-width: 500px;
+      animation: floatReverse 3s ease-in-out infinite;
     }
 
     @keyframes float {
@@ -67,20 +62,29 @@
       50% { transform: translateY(10px); }
       100% { transform: translateY(0px); }
     }
+
+    footer {
+      text-align: center;
+      padding: 20px;
+      font-size: 0.9em;
+      color: #888;
+    }
   </style>
 </head>
 <body>
   <div class="container">
     <h1>Karvos</h1>
     <div class="logo-section">
-      <img src="kravos-logo.png" alt="Karvos Logo" />
+      <img src="logo.png" alt="Karvos Logo" />
       <div class="description">
-        <p>Karvos is more than a studio. It’s a vision, a rebellion against the ordinary. Every line of code, every frame of art, every second of gameplay—it’s all forged with purpose. We don’t follow trends. We craft legends.</p>
+        <p>Discover our universe of games, built with emotion, depth, and purpose.  
+        Welcome to the home of unforgettable adventures.</p>
       </div>
     </div>
-    <div class="footer">
-      © 2025 Karvos. All rights reserved.
-    </div>
   </div>
+
+  <footer>
+    © 2025 Karvos. All rights reserved.
+  </footer>
 </body>
 </html>
